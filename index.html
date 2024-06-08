@@ -8,8 +8,16 @@
 <body>
     <h1>Redirecting...</h1>
     <script>
- eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('3 6=5.4.2.1();if(6.7("0")||6.7("8")){9.location.href="a://b.c.d/e/f/g/h/i/j/k"}else if(6.7("l")){9.location.href="m://n.o.p/q/r/s/t/u/v/w"}else{console.x("y")}z;',33,33,'userAgent|includes|navigator|const|window|window|user_agent|toLowerCase||if|href|apps|apple|com|sa|app|maheer|customer|id6499317335|else|play|google|details|id|unsupported|device|log|maheer_customerApp|console|Unsupported|y|else|android'.split('|'),0,{}))
-        }
+  const userAgent = window.navigator.userAgent.toLowerCase();
+if (userAgent.includes("iphone") || userAgent.includes("ipad")) {
+    window.location.href = "https://apps.apple.com/sa/app/maheer-customer/id6499317335"; // Replace with your Apple App Store link
+} else if (userAgent.includes("android")) {
+    window.location.href = "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.maheer.customerApp"; // Replace with your Google Play Store link
+} else {
+    console.log("Unsupported device");
+}
+
+
 
 </script>
 </body>
